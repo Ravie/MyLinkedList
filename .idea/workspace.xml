@@ -25,21 +25,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="504">
+              <caret line="167" column="35" lean-forward="true" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1661#1691#1" expanded="true" />
-                <element signature="e#1974#2004#1" expanded="true" />
-                <element signature="e#2678#2679#0" expanded="true" />
-                <element signature="e#2702#2703#0" expanded="true" />
+                <element signature="e#1660#1690#1" expanded="true" />
+                <element signature="e#1973#2003#1" expanded="true" />
                 <element signature="e#2921#2922#0" expanded="true" />
                 <element signature="e#2952#2953#0" expanded="true" />
-                <element signature="e#2994#2995#0" expanded="true" />
-                <element signature="e#3021#3022#0" expanded="true" />
                 <element signature="e#3072#3073#0" expanded="true" />
                 <element signature="e#3099#3100#0" expanded="true" />
               </folding>
@@ -52,11 +48,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="552" column="17" selection-start-line="552" selection-start-column="17" selection-end-line="552" selection-end-column="17" />
+            <state relative-caret-position="448">
+              <caret line="1096" column="28" lean-forward="true" selection-start-line="1096" selection-start-column="28" selection-end-line="1096" selection-end-column="28" />
               <folding>
                 <element signature="e#16099#16100#0" expanded="true" />
                 <element signature="e#16149#16150#0" expanded="true" />
@@ -77,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/AbstractList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9435">
+            <state relative-caret-position="878">
               <caret line="600" column="35" selection-start-line="600" selection-start-column="35" selection-end-line="600" selection-end-column="35" />
               <folding>
                 <element signature="e#9883#9884#0" expanded="true" />
@@ -106,6 +102,7 @@
       <find>remove</find>
       <find>iterator</find>
       <find>addAll</find>
+      <find>toArray</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,12 +201,12 @@
       <workItem from="1554370004415" duration="7039000" />
       <workItem from="1554409953929" duration="4819000" />
       <workItem from="1554417706455" duration="591000" />
-      <workItem from="1554421168059" duration="2036000" />
+      <workItem from="1554421168059" duration="3125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14485000" />
+    <option name="totallyTimeSpent" value="15574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -340,9 +337,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ILinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9435">
+        <state relative-caret-position="878">
           <caret line="600" column="35" selection-start-line="600" selection-start-column="35" selection-end-line="600" selection-end-column="35" />
           <folding>
             <element signature="e#9883#9884#0" expanded="true" />
@@ -360,43 +364,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ILinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="552" column="17" selection-start-line="552" selection-start-column="17" selection-end-line="552" selection-end-column="17" />
-          <folding>
-            <element signature="e#16099#16100#0" expanded="true" />
-            <element signature="e#16149#16150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="504">
+          <caret line="167" column="35" lean-forward="true" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1661#1691#1" expanded="true" />
-            <element signature="e#1974#2004#1" expanded="true" />
-            <element signature="e#2678#2679#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
+            <element signature="e#1660#1690#1" expanded="true" />
+            <element signature="e#1973#2003#1" expanded="true" />
             <element signature="e#2921#2922#0" expanded="true" />
             <element signature="e#2952#2953#0" expanded="true" />
-            <element signature="e#2994#2995#0" expanded="true" />
-            <element signature="e#3021#3022#0" expanded="true" />
             <element signature="e#3072#3073#0" expanded="true" />
             <element signature="e#3099#3100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="1096" column="28" lean-forward="true" selection-start-line="1096" selection-start-column="28" selection-end-line="1096" selection-end-column="28" />
+          <folding>
+            <element signature="e#16099#16100#0" expanded="true" />
+            <element signature="e#16149#16150#0" expanded="true" />
           </folding>
         </state>
       </provider>

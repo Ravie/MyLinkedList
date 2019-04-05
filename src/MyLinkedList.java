@@ -116,7 +116,15 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
     @Override
     public void clear() {
-
+        for (Node<E> x = first; x != null; ) {
+            Node<E> next = x.next;
+            x.item = null;
+            x.next = null;
+            x.prev = null;
+            x = next;
+        }
+        first = last = null;
+        listSize = 0;
     }
 
     @Override
@@ -128,7 +136,13 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
     @Override
     public int indexOf(E element) {
-        return 0;
+        int index = 0;
+        for (Node<E> curNode = first; curNode != null; curNode = curNode.next) {
+            if (element.equals(curNode.item))
+                return index;
+            index++;
+        }
+        return -1;
     }
 
     @Override
@@ -151,9 +165,19 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         return listSize;
     }
 
-    @Override
-    public E[] toArray() {
-        return null;
+    public <T> T[] toArray(T[] a) {
+        if (a.length < listSize)
+            a = (T[])java.lang.reflect.Array.newInstance(
+                    a.getClass().getComponentType(), listSize);
+        int i = 0;
+        Object[] result = a;
+        for (Node<E> x = first; x != null; x = x.next)
+            result[i++] = x.item;
+
+        if (a.length > listSize)
+            a[listSize] = null;
+
+        return a;
     }
 
     @Override
