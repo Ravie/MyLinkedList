@@ -1,5 +1,6 @@
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class MyLinkedList<E> implements ILinkedList<E> {
 
@@ -220,6 +221,58 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new SimpleListItr(0);
+    }
+
+    public Iterator<E> iterator(int index) {
+        return new SimpleListItr(index);
+    }
+
+    private class SimpleListItr implements Iterator<E> {
+        private Node<E> lastReturned;
+        private Node<E> next;
+        private int nextIndex;
+
+        SimpleListItr(int index) {
+            // assert isPositionIndex(index);
+            next = (index == listSize) ? null : findInsertLocation(index);
+            nextIndex = index;
+        }
+
+        public boolean hasNext() {
+            return nextIndex < listSize;
+        }
+
+        public E next() {
+            if (!hasNext())
+                throw new NoSuchElementException();
+
+            lastReturned = next;
+            next = next.next;
+            nextIndex++;
+            return lastReturned.item;
+        }
+
+        public boolean hasPrevious() {
+            return nextIndex > 0;
+        }
+
+        public E previous() {
+            if (!hasPrevious())
+                throw new NoSuchElementException();
+
+            lastReturned = next = (next == null) ? last : next.prev;
+            nextIndex--;
+            return lastReturned.item;
+        }
+
+        public int nextIndex() {
+            return nextIndex;
+        }
+
+        public int previousIndex() {
+            return nextIndex - 1;
+        }
+
     }
 }
