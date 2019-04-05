@@ -28,10 +28,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+            <state relative-caret-position="612">
+              <caret line="138" column="30" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1559#1589#1" expanded="true" />
                 <element signature="e#1872#1902#1" expanded="true" />
                 <element signature="e#2678#2679#0" expanded="true" />
                 <element signature="e#2702#2703#0" expanded="true" />
@@ -54,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="423" column="19" selection-start-line="423" selection-start-column="12" selection-end-line="423" selection-end-column="19" />
+            <state relative-caret-position="304">
+              <caret line="405" column="8" lean-forward="true" selection-start-line="405" selection-start-column="8" selection-end-line="405" selection-end-column="34" />
               <folding>
                 <element signature="e#16099#16100#0" expanded="true" />
                 <element signature="e#16149#16150#0" expanded="true" />
@@ -203,12 +204,12 @@
       <workItem from="1554370004415" duration="7039000" />
       <workItem from="1554409953929" duration="4819000" />
       <workItem from="1554417706455" duration="591000" />
-      <workItem from="1554421168059" duration="1215000" />
+      <workItem from="1554421168059" duration="1711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13664000" />
+    <option name="totallyTimeSpent" value="14160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -371,8 +372,8 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="423" column="19" selection-start-line="423" selection-start-column="12" selection-end-line="423" selection-end-column="19" />
+        <state relative-caret-position="304">
+          <caret line="405" column="8" lean-forward="true" selection-start-line="405" selection-start-column="8" selection-end-line="405" selection-end-column="34" />
           <folding>
             <element signature="e#16099#16100#0" expanded="true" />
             <element signature="e#16149#16150#0" expanded="true" />
@@ -382,10 +383,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        <state relative-caret-position="612">
+          <caret line="138" column="30" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1559#1589#1" expanded="true" />
             <element signature="e#1872#1902#1" expanded="true" />
             <element signature="e#2678#2679#0" expanded="true" />
             <element signature="e#2702#2703#0" expanded="true" />
