@@ -146,7 +146,8 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     public E get(int index) {
         isCorrectIndex(index);
 
-        return null;
+        Node<E> node = findInsertLocation(index);
+        return node.item;
     }
 
     @Override
@@ -164,6 +165,24 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     public E remove(int index) {
         isCorrectIndex(index);
 
+        Node<E> delNode = findInsertLocation(index);
+        Node<E> leftNode = delNode.prev;
+        Node<E> rightNode = delNode.next;
+
+        if(leftNode == null) {
+            first = rightNode;
+        } else {
+            leftNode.next = rightNode;
+            delNode.prev = null;
+        }
+        if(rightNode == null) {
+            last = leftNode;
+        } else {
+            rightNode.prev = leftNode;
+            delNode.next = null;
+        }
+
+        delNode.item = null;
         listSize--;
         return null;
     }
@@ -172,7 +191,10 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     public E set(int index, E element) {
         isCorrectIndex(index);
 
-        return null;
+        Node<E> node = findInsertLocation(index);
+        E tmp = node.item;
+        node.item = element;
+        return tmp;
     }
 
     @Override
