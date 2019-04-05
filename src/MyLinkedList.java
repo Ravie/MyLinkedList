@@ -56,13 +56,17 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
         // построение связей между элементами коллекции
         // выносим проверку из цикла для повышения производительности
+        @SuppressWarnings("unchecked") E e0 = (E) array[0];
+        Node<E> newNode = new Node<>(startIndex, e0, null);
+        if (startIndex == null)
+            first = newNode;
+        else
+            startIndex.next = newNode;
+        startIndex = newNode;
         for (int i = 1; i < arraySize; i++) {
             @SuppressWarnings("unchecked") E e = (E) array[i];
-            Node<E> newNode = new Node<>(startIndex, e, null);
-            if (startIndex == null)
-                first = newNode;
-            else
-                startIndex.next = newNode;
+            newNode = new Node<>(startIndex, e, null);
+            startIndex.next = newNode;
             startIndex = newNode;
         }
 
