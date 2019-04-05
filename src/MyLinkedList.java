@@ -19,8 +19,13 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         }
     }
 
-    private void isCorrectIndex(int index) {
+    private void isCorrectPosition(int index) {
         if(index < 0 || index > listSize)
+            throw new ArrayIndexOutOfBoundsException();
+    }
+
+    private void isCorrectIndex(int index) {
+        if(index < 0 || index >= listSize)
             throw new ArrayIndexOutOfBoundsException();
     }
 
@@ -35,7 +40,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     public boolean addAll(Collection<? extends E> c) { return addAll(listSize, c); }
 
     public boolean addAll(int index, Collection<? extends E> c) {
-        isCorrectIndex(index);
+        isCorrectPosition(index);
 
         Object[] array = c.toArray();
         int arraySize = array.length;
@@ -104,7 +109,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
     @Override
     public void add(int index, E element) {
-        isCorrectIndex(index);
+        isCorrectPosition(index);
 
         listSize++;
     }
