@@ -103,7 +103,13 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
     @Override
     public void add(E element) {
-        add(listSize, element);
+        Node<E> tmp = last;
+        Node<E> newNode = new Node<>(tmp, element, null);
+        last = newNode;
+        if (tmp == null)
+            first = newNode;
+        else
+            tmp.next = newNode;
         listSize++;
     }
 
@@ -111,6 +117,15 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     public void add(int index, E element) {
         isCorrectPosition(index);
 
+        Node<E> tmp = findInsertLocation(index);
+        Node<E> cur = tmp.prev;
+        Node<E> newNode = new Node<>(cur, element, tmp);
+        tmp.prev = newNode;
+
+        if (cur == null)
+            first = newNode;
+        else
+            cur.next = newNode;
         listSize++;
     }
 
